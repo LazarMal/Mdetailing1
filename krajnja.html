@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDetailing - Početna</title>
+    <link rel="icon" href="logo.jpg" type="png" style="border-radius:50%;">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #072A6C;
+            color: white;
+            padding: 0px;
+            text-align: center;
+            align-content: center;
+        }
+
+
+
+
+        nav {
+            background-color: #0056b3;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #003d80;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .gallery-item {
+            position: relative;
+            flex: 1;
+            margin: 0;
+            overflow: hidden;
+            text-decoration: none;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: calc(100vh - 120px); /* Height of header + nav + footer */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        footer {
+            background-color: #072A6C;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+<body background="beloplatno.avif">
+    <header >
+         <img src="logo.jpg" alt="Mdetailing logo" style="border-radius: 50%; height: 60px; width: 60px;" >
+            <h1 style="margin-top:0px;">MDetailing</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="krajnja.html">Početna</a></li>
+            <li><a href="onamaa.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="mapa.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="gallery">
+            <a href="onamaa.html" class="gallery-item">
+                <img src="onama.jpg" alt="O nama">
+                <div class="overlay">O nama</div>
+            </a>
+            <a href="usluge.html" class="gallery-item">
+                <img src="aba.jpeg" alt="Usluge">
+                <div class="overlay">Usluge</div>
+            </a>
+            <a href="galerija.html" class="gallery-item">
+                <img src="garaza.jpg" alt="Galerija">
+                <div class="overlay">Galerija</div>
+            </a>
+            <a href="mapa.html" class="gallery-item">
+                <img src="OIP.jpeg" alt="Kontakt">
+                <div class="overlay">Kontakt</div>
+            </a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mdetailing. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDetailing - Kontakt</title>
+     <link rel="icon" href="logo.jpg" type="png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #072A6C;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0056b3;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #003d80;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .contact-form, .contact-info {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-bottom: 5px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-info .map iframe {
+            border: 0;
+            width: 100%;
+            height: 200px;
+        }
+
+        .contact-info p, .contact-info a {
+            margin: 10px 0;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact-info .social-media a {
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #072A6C;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+        }
+        .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container img {
+        max-width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 10px;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Mdetailing logo" >
+            <h1>MDetailing</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="krajnja.html">Početna</a></li>
+            <li><a href="onamaa.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="mapa.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="contact">
+            <div class="contact-form">
+                <h2>Kontaktirajte nas</h2>
+                <form id="contactForm" novalidate>
+                    <label for="name">Ime:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Poruka:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Pošalji</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Nađite nas</h2>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.174515297012!2d20.404689315526205!3d45.37884114926714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b110f8e191c61%3A0x8b73e14d29f92e4!2sValjevska%205%2C%20Zrenjanin!5e0!3m2!1sen!2srs!4v1622512352511!5m2!1sen!2srs" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <p>Adresa: Valjevska 5, 23000 Zrenjanin</p>
+                <p>Telefon: <a href="tel:+381645567789">061/211/7615</a></p>
+                <p>Email: <a href="mailto:mdetailing@gmail.com">mdetailingzr@gmail.com</a></p>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/mdetailing_zr/" target="_blank">
+                        <img src="insta.png" width="30">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61555680638809" target="_blank">
+                        <img src="facebookee.png" alt="Facebook" width="30">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Mdetailing. Sva prava zadržana.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            if (name && email && message) {
+                alert('Poruka je uspešno poslata!');
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Molimo popunite sva polja.');
+            }
+        });
+    </script>
+</body>
+</html>
